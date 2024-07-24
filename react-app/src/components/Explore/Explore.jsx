@@ -20,7 +20,7 @@ const Explore = ({category, setCategory}) => {
                 )
             })}
         </div>
-        <hr /> 
+        <hr />   
     </div>
   )
 }
