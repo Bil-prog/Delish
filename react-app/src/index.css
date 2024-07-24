@@ -1,22 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Tajawal;
 }
-body{
+
+body {
   min-height: 100vh;
 }
-a{
+
+a {
   text-decoration: none;
   color: inherit;
 }
-.app{
-  width: 80%;
+
+.app {
+  width: 85%;
   margin: auto;
 }
-:root{
+
+:root {
   --text-primary: #49557e;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.head-title {
+  color: var(--text-primary);
+  font-weight: 500;
 }
