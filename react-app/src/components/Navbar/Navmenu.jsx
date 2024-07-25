@@ -4,7 +4,8 @@ import './navbar.css'
 import {assets} from '../../assets/assets'
 import {Link} from 'react-router-dom'
 
-const Navmenu = () => {
+// eslint-disable-next-line react/prop-types
+const Navmenu = ({setShowLogin}) => {
     const [menu, setMenu] = useState("home");
 
   return (
@@ -16,12 +17,12 @@ const Navmenu = () => {
             <a href='#footer' onClick={()=>setMenu('contact')} className={menu === "contact" ? "active": ""}>Contact Us</a>
         </ul>
         <div className="navbar-right">
-            <img src={assets.search_icon} alt="Search icon" />
+            {/* <img src={assets.search_icon} alt="Search icon" /> */}
             <div className="navbar-basket-icon">
                 <img src={assets.basket_icon} alt="" />
                 <div className="dot"></div>
             </div>
-            <button className='navbar-btn'>Sign In</button>
+            <button onClick={()=>setShowLogin(true)}className='navbar-btn'>Sign In</button>
         </div>
     </div>
   )
