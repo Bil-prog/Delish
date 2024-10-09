@@ -38,7 +38,6 @@ const StoreContextProvider = (props) => {
         addToCart,
         removeFromCart,
         getTotalCartAmount
-
     }
 
   return (
